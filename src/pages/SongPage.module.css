@@ -1,0 +1,194 @@
+.page {
+  min-height: 100vh;
+  background: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.inner {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dashedTop, .dashedBottom {
+  width: 100%;
+  border-top: 2px dashed var(--red-pale);
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.5rem 0;
+}
+
+.remindsText {
+  font-family: var(--font-hand);
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  color: var(--text);
+  text-align: center;
+  font-weight: 600;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.kittyMusicContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid var(--red-pale);
+  border-radius: 28px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(255, 77, 121, 0.12);
+}
+
+.kittyMusicImg {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 18px rgba(255, 77, 121, 0.22));
+}
+
+.musicNotesWrap {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.note {
+  font-size: 1.3rem;
+  color: var(--red);
+  font-weight: bold;
+}
+
+.playerContainer {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  justify-content: center;
+}
+
+.playerBar {
+  background: #ffffff;
+  padding: 10px 18px;
+  border-radius: 50px;
+  border: 1.5px solid var(--red-pale);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  box-shadow: 0 4px 18px rgba(255, 77, 121, 0.12);
+  justify-content: space-between;
+}
+
+.playBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--red);
+  background: #ffffff;
+  color: var(--red);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 10px rgba(255, 77, 121, 0.15);
+}
+
+.playBtn:hover {
+  background: var(--red);
+  color: #ffffff;
+  transform: scale(1.06);
+}
+
+.metadata {
+  text-align: left;
+  flex: 1;
+  min-width: 0;
+}
+
+.songTitle {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.artist {
+  font-family: var(--font-hand);
+  font-size: 1.1rem;
+  color: var(--red);
+  display: block;
+  font-weight: 700;
+}
+
+.seekbar {
+  flex: 2;
+  accent-color: var(--red);
+  cursor: pointer;
+  min-width: 0;
+}
+
+.highlight {
+  font-family: var(--font-hand);
+  font-size: clamp(1.1rem, 4vw, 1.4rem);
+  color: var(--text);
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-hand);
+  font-size: clamp(2rem, 7vw, 3rem);
+  color: var(--red);
+  font-weight: 700;
+  transform: rotate(-1.5deg);
+  display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .playerBar {
+    flex-direction: column;
+    padding: 1.1rem;
+    border-radius: 24px;
+    gap: 12px;
+  }
+  .playBtn { align-self: center; }
+  .metadata { text-align: center; width: 100%; }
+  .seekbar { width: 100%; }
+}

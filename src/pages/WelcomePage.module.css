@@ -1,0 +1,77 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+/* Main card content */
+.contentBox {
+  position: relative;
+  z-index: 10;
+  padding: 2.2rem 1.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.75);
+  border: 2px dashed var(--red-pale);
+  border-radius: 28px;
+  max-width: 440px;
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(255, 77, 121, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.kittyStickerWrap {
+  margin-bottom: 0.8rem;
+}
+
+.welcomeKittySticker {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(255, 77, 121, 0.2));
+}
+
+.textGroup {
+  margin-bottom: 1.2rem;
+}
+
+.helloText {
+  font-family: var(--font-hand);
+  font-size: 3.2rem;
+  color: var(--text);
+  line-height: 1;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.loveText {
+  font-family: var(--font-hand);
+  font-size: 4rem;
+  color: var(--red);
+  line-height: 1;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.question {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--text-light);
+  margin-bottom: 1.8rem;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

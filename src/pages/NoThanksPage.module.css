@@ -1,0 +1,43 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--paper);
+  padding: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 2px dashed var(--red-pale);
+  border-radius: 28px;
+  padding: 2.2rem 2rem;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  box-shadow: 0 8px 30px rgba(255, 77, 121, 0.1);
+}
+
+.kittyWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kittyImg {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(255, 77, 121, 0.2));
+}
+
+.message {
+  font-family: var(--font-hand);
+  font-size: 1.8rem;
+  color: var(--text);
+  line-height: 1.3;
+}

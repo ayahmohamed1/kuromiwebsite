@@ -1,0 +1,98 @@
+.page {
+  min-height: 100vh;
+  background: var(--paper);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.inner {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 0;
+}
+
+.dashedTop, .dashedBottom {
+  width: 100%;
+  border-top: 2px dashed var(--red-pale);
+}
+
+.kittyCakeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.kittyCakeImg {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 14px rgba(255, 77, 121, 0.22));
+}
+
+/* Lined paper look - Pink & White */
+.letter {
+  width: 100%;
+  padding: 1.5rem 1.8rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(255, 77, 121, 0.08);
+  border: 1.5px solid var(--red-pale);
+  border-left: 5px solid var(--red);
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 29px,
+    rgba(255, 182, 193, 0.35) 30px
+  );
+}
+
+.line {
+  font-family: var(--font-hand);
+  font-size: 1.25rem;
+  line-height: 1.92;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.spacer { height: 1.92rem; }
+
+.signoff {
+  margin-top: 1.5rem;
+  text-align: right;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+.signature {
+  font-family: var(--font-hand);
+  font-size: 1.5rem;
+  color: var(--red);
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+.title {
+  font-family: var(--font-hand);
+  font-size: clamp(2rem, 7vw, 3rem);
+  color: var(--red);
+  font-weight: 700;
+  transform: rotate(-1.5deg);
+  display: inline-block;
+}
